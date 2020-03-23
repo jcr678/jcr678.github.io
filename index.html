@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- UPLOAD THIS USING GITHUB FROM THE GUYS VIDEO-->
+
+
+
+
+
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body id="whole_page">
+<h1>Personal Website</h1>
+<h2>Jacob Richard</h2>
+
+<div class="links">
+  <a href="https://www.linkedin.com/in/jacob-richard-9a7131191" align="center">linkedin</a>
+  <br></br>
+  <a href="https://drive.google.com/file/d/1rdSkIrWzYDl9VGlPZr2ovx18yXe3SEFb/view?usp=sharing">Resume</a>
+</div>
+<table>
+
+    <th><img src="photo_of_self.jpg" alt="Photo" width="640" height="480" align ="center"> </img></th>
+    <th><img src="photo_symposium.jpg" alt="Photo" width="640" height="480" align ="center"
+      id="right_photo"> </img></th>
+
+</table>
+<h4>Please enter a new color for website:</h4>
+<p>(red, blue, and yellow are <b>valid</b> colors)</p>
+
+<i> If you enter an invalid color you  will be prompted again.</i>
+
+<form id="form1" onsubmit="return false">
+  <label for="color" id="color_text">Color:</label>
+  <input type="text" id="color" name="color"><br><br>
+  <input type="submit" value="Submit" onclick="myFunction()">
+</form>
+
+<script>
+  function myFunction() {
+    var inputColor = document.getElementById("color").value;
+    var toChange = document.getElementById('whole_page');
+    var colorText = document.getElementById("color_text");
+    if (inputColor=="blue"){
+    toChange.style.background = '#8aa7cc';
+    colorText.innerHTML = "Color: ";
+  }
+  else if(inputColor=="red"){
+    toChange.style.background = '#ff0000';
+    colorText.innerHTML = "Color: ";
+  }
+  else if(inputColor=="yellow"){
+    toChange.style.background = '#fce300';
+    colorText.innerHTML = "Color: ";
+  }
+  else{
+    var str = "ERROR: invalid color.";
+    var str_with_color = str.fontcolor("red");
+    colorText.innerHTML = str_with_color;
+    toChange.style.background = "Ivory";
+  }
+  }
+  </script>
+ </body>
+ </html>

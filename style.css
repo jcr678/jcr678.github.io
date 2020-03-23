@@ -1,0 +1,7 @@
+h1{ color: blue;}/*element*/
+#whole_page{ background-color: Ivory;}/*id*/
+.links {padding-left: 50px;}/*class*/
+#right_photo {
+  padding-left: 90px;
+
+}
